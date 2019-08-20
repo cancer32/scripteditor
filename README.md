@@ -14,8 +14,8 @@ An external python script editor for Autodesk Maya. With the help of it we can c
 import maya.cmds as cmds
 host = '127.0.0.1'		# For connecting from remote host use the IP address of the machine
 port = 5050
-if not cmds.commandPort('%s:%s' %(host,port), q=True)
-	cmds.commandPort(n='%s:%s' %(host,port), stp='python')
+if not cmds.commandPort('%s:%s' %(host,port), q=True):
+    cmds.commandPort(n='%s:%s' %(host,port), stp='python')
 </pre>        
 2. Run the scripteditor.py.
 3. Click Connect button and give Host & Port given on step 1.
